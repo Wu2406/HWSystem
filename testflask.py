@@ -29,7 +29,8 @@ def dologin():
     password = request.form['pwd']
     print("username:"+username)
     print("password"+password)
-    return do_the_login(username,password)
+    msg,statuscode = do_the_login(username,password)
+    return msg,statuscode
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
