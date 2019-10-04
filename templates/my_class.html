@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>今日课表</h1>
+    <h2>{{day}}</h2>
+    {% for item in my_list %}
+            <li>{{ item.get('id') }}--{{ item.get('value') }}</li>
+    {% endfor %}
+</body>
+</html>
